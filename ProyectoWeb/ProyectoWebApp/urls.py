@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 
 from ProyectoWebApp import views
 
@@ -11,6 +11,7 @@ urlpatterns = [
     path('tienda', views.tienda, name="Tienda"),
     path('blog', views.blog, name="Blog"),
     path('contacto', views.contacto, name="Contacto"),
+    # path('servicio', include('AppServicios.urls')),
 ]
 
 urlpatterns+=static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)

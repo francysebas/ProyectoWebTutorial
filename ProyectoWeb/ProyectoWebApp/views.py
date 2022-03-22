@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from ProyectoWeb.AppServicios.models import Servicio
+from AppServicios.models import Servicio
 # Create your views here.
 
 
