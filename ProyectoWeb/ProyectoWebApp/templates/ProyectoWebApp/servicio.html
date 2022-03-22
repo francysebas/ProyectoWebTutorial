@@ -4,8 +4,12 @@
 
 {%block content%}
 
+{%for servicio in servicios}
 <div>
-    <p> hola soy servicios dinamicos</p>
+    <h2>{{servicio.titulo}} </h2>
+    <p>{{servicio.contenido}}</p>
 </div>
+
+{% endfor %}
 
 {% endblock %}
