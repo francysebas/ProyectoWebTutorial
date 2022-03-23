@@ -29,7 +29,7 @@
             Categorias:
                 {% for post in posts %}
                    {% for categoria in post.categorias.all %}
-                     <a href="{% url 'categoria' categoria.id %}" class="linksCategorias"> {{categoria.nombreCat}}</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                     {{categoria.nombreCat}} &nbsp;&nbsp;
                    {% endfor %}
                 {% endfor %}
         </div>
