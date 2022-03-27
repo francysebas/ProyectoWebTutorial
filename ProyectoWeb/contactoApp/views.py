@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+
 from .forms import FormularioContactos
 from django.core.mail import send_mail, EmailMessage
 
@@ -21,7 +22,7 @@ def contacto(request):
             # enviar email
             email = EmailMessage("Mensaje desde app Django",
                                  "el usuario con nombre {} con la dirección {} escribe lo siguiente: \n\n {}".
-                                 format(nombre, email, contenido), "", ["edilverllantenguerrero@gmail.com"],
+                                 format(nombre, email, contenido), "", ["dagop49@gmail.com"],
                                  reply_to=[email])
             try:
                 email.send()
