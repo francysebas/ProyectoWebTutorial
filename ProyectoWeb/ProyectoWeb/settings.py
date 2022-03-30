@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'tiendaApp',
     'carroApp',
     'autenticacionApp',
+    'crispy_forms',
 
 ]
 
@@ -146,3 +147,6 @@ EMAIL_PORT = 587
 # EMAIL_HOST_PASSWORD = "46102137.+sebas"
 EMAIL_HOST_USER = "dagop49@gmail.com"
 EMAIL_HOST_PASSWORD = "DIEGOMEZ*2592"
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
